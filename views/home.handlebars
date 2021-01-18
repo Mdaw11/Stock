@@ -1,0 +1,27 @@
+<div class="bg-light p-4">
+<h1 class="p-2">{{ stock.companyName }}</h1>
+    <div class="p-2">
+        <strong>Latest Price: </strong>${{ stock.latestPrice }}
+        <br/>
+        <strong>Previous Close: </strong>${{ stock.previousClose }}
+        <br/>
+        <strong>Market Cap: </strong>${{ stock.marketCap }}
+        <br/>
+        <strong>YTD Change: </strong>${{ stock.ytdChange }}
+        <br/>
+        <strong>52 Week High: </strong>${{ stock.week52High }}
+        <br/>
+        <strong>52 Week Low: </strong>${{ stock.week52Low }}
+    </div>    
+
+
+
+</div>
+
+
+
+
+
+{{!-- {{#each stock}}
+    {{@key}} | {{this}}</br>
+{{/each}} --}}

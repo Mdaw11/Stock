@@ -1,0 +1,14 @@
+<form class="d-flex" action="/analysis.html" method="POST">
+          <input class="form-control me-2" type="search" placeholder="Stock Dividend" aria-label="Search" name="stock_ticker">
+          <button class="btn btn-outline-secondary" type="submit">Lookup</button>
+</form><br>
+<div class="bg-light p-4">
+    <p>
+    {{#each company}}
+        <h1>{{this.key}}</h1>
+        <strong>Current Amount: </strong> ${{this.amount}} </br>
+        <strong>Payment Date: </strong> {{this.paymentDate}} </br>
+        <strong>Record Date: </strong> {{this.recordDate}} </br>
+    {{/each}}
+    </p>
+</div>

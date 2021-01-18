@@ -1,0 +1,11 @@
+<div id="myData"></div>
+
+<script>
+    const divAPI_url = 'https://cloud.iexapis.com/stable/stock/agnc/dividends/1m?token=pk_2b85786f40f944dc8adfbf75cc7f253d';
+    async function getDivAPI() {
+        const response = await fetch(divAPI_url);
+        const data = await response.json();
+        console.log(data[0].amount);
+    }
+    getDivAPI();
+</script>
